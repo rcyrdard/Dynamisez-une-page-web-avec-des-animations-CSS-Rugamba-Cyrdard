@@ -1,0 +1,335 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #f2f2f2;
+} */
+
+
+
+/* .fa-circle-1,
+.fa-circle-2,
+.fa-circle-3 {
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    background-color: red;
+    font-size: 20px;
+} */
+
+/* .fa-heart {
+    background-color: green;
+} */
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    /* text-align: center; */
+    padding: 35px 0 5px 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#Paris-Belleville {
+    padding: 20px 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+#Paris-Belleville p {
+    margin-left: 30px;
+}
+
+#conteneur-titre-background {
+    background-color: #f2f2f2;
+    padding: 40px 0 0 0;
+}
+
+#conteneur-titre {
+    width: 76%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#conteneur-titre h1 {
+    margin-bottom: 15px;
+}
+
+#conteneur-titre p {
+    margin-bottom: 30px;
+}
+
+#conteneur-titre button {
+    margin-bottom: 70px;
+    padding: 20px;
+    border-radius: 40px;
+    border: none;
+    /* background-color: darkviolet; */
+    background: linear-gradient(to bottom right, #FF79DA 10%, #9356DC 90%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+/* button {
+    padding: 20px;
+    border-radius: 25px;
+    background-color: darkviolet;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+        Liens
+------------------------- */
+
+
+#fonctionnement-titre {
+    margin: 50px 0 20px 24px;
+    /* margin-bottom: 20px; */
+    width: 90%;
+
+}
+
+#fonctionnement {
+    margin: 0 0 70px 24px;
+    width: 90%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; */
+}
+
+.liens {
+    /* position: relative; */
+    margin-bottom: 20px;
+    /* width: 350px; */
+    /* display: flex; */
+    background-color: #f2f2f2;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    box-shadow: 1px 8px 11px #d3d2d2;
+}
+
+
+/* .teo {
+    position: relative;
+    margin-bottom: 20px;
+    width: 350px;
+    display: flex;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 1px 5px #d3d2d2;
+} */
+
+
+
+
+/* .fa-mobile-screen-button, */
+.liens h3 {
+    padding: 30px 0 30px 25px;
+    display: inline-block;
+}
+
+.fa-mobile-screen-button {
+    padding: 30px 0 30px 34px;
+}
+
+.fa-location-dot {
+    /* position: relative;
+    top: 33px;
+    right: 277px; */
+    font-size: 24px;
+    margin-left: -8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------
+        LES FIGURES 
+---------------------------- */
+
+
+#Restaurants {
+    width: 90%;
+
+    /* align-self: flex-start; */
+}
+
+
+
+#listes-figures {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20PX;
+}
+
+figure {
+    position: relative;
+    /* margin-bottom: 20PX; */
+    width: 90%;
+    /* display: flex;
+    align-items: center; */
+    /* height: 250px; */
+    /* border-radius: 10px; */
+}
+
+figure img {
+    /* position: relative; */
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+
+.Nouveau {
+    /* position: absolute;
+    left: 268px;
+    top: 200px; */
+    padding: 5px;
+    border-radius: 3px;
+    background-color: aquamarine;
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+
+
+
+
+.un,
+.deux {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+/* .deux {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+} */
+
+
+
+
+
+
+figcaption {
+    padding: 10px 0 0 12px;
+    background-color: #fff;
+    /* background-color: #f22; */
+    border-radius: 0 0 15px 15px;
+}
+
+figcaption h3 {
+    margin-bottom: 4px;
+}
+
+.fa-heart {
+    position: relative;
+    left: 86%;
+    bottom: 40px;
+    font-size: 20px;
+}
+
+
+footer {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* color: #fff; */
+    background-color: rgb(61, 61, 61);
+}
+
+footer img,
+a {
+    margin: 0px auto;
+    width: 90%;
+    color: #fff;
+}
+
+footer img {
+    color: #fff;
+    font-size: 10px;
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+
+    /* list-style-type: none; */
+}
+
+footer :nth-child(2),
+:nth-child(3) {
+    font-weight: bold;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+    display: inline;
+    /* margin-right: 10px; */
+}
+
+.fa-utensils {
+    margin-right: 17px;
+}
+
+.fa-handshake-angle {
+    margin-right: 10px;
+}
