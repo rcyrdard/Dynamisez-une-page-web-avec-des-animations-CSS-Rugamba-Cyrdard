@@ -58,7 +58,7 @@ header img {
     background: linear-gradient(to bottom right, #FF79DA 10%, #9356DC 90%);
     color: #fff;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 
@@ -70,7 +70,10 @@ header img {
 
 
 #fonctionnement-titre {
-    margin: 50px 0 20px 24px;
+    /* margin: 50px 0 20px 24px; */
+    /* margin: 50px 0 20px 0; */
+    margin: 50px auto;
+    margin-bottom: 20px;
     width: 90%;
 }
 
@@ -86,16 +89,22 @@ header img {
     box-shadow: 1px 8px 11px #d3d2d2;
 }
 
+.liens a {
+    color: #000;
+    text-decoration: none;
+}
+
 
 
 /* .fa-mobile-screen-button, */
 .liens h3 {
-    padding: 30px 0 30px 25px;
+    padding: 30px 10px 30px 19px;
+    /* padding: 30px; */
     display: inline-block;
 }
 
 .fa-mobile-screen-button {
-    padding: 30px 0 30px 34px;
+    padding: 30px 0 30px 23px;
 }
 
 .fa-location-dot {
@@ -116,11 +125,18 @@ header img {
 
 
 #Restaurants {
+    position: relative;
+    margin: 0px auto;
     width: 90%;
+    top: 75px;
+    z-index: 1;
+    /* background-color: #f2f2f2; */
 }
 
 #listes-figures {
-    padding: 50px 0;
+    position: relative;
+    padding: 100px 0 50px 0;
+    /* padding: 50px 0; */
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -131,6 +147,13 @@ header img {
 figure {
     position: relative;
     width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 8px 11px #d3d2d2;
+}
+
+figure a {
+    color: #000;
+    text-decoration: none;
 }
 
 figure img {
@@ -189,7 +212,7 @@ footer {
 }
 
 footer h3,
-a {
+footer a {
     margin: 0px auto;
     width: 90%;
     color: #fff;
@@ -273,7 +296,7 @@ header {
     bottom: 59px;
     width: 100%;
     margin-bottom: -60px;
-    border-radius: 48px 48px 0 0;
+    border-radius: 30px 30px 0 0;
     background-color: #f2f2f2;
 }
 
@@ -295,7 +318,8 @@ header {
 #fond {
     position: relative;
     /* width: 100vw; */
-    height: 300px;
+    height: 360px;
+    object-fit: cover;
 }
 
 #fond img {
@@ -336,7 +360,7 @@ header {
     box-sizing: border-box;
 } */
 
-main {
+#plats {
     padding: 4px 0 30px 0;
     margin: 0px auto;
     width: 90%;
@@ -407,6 +431,11 @@ hr {
     opacity: 1;
 }
 
+.box_1 a {
+    color: #000;
+    text-decoration: none;
+}
+
 .marge {
     padding: 14px;
 }
@@ -447,6 +476,7 @@ button {
     display: block;
     margin: 50px auto;
     width: 230px;
+    font-weight: lighter;
 }
 
 footer img {
@@ -469,3 +499,154 @@ footer img {
 /* ------------------------------
         CODE EXPORTER
 ------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------
+        LES MEDIAS
+------------------------------- */
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    /* ----------
+Tablett */
+
+    figure {
+        width: 48%;
+    }
+
+    #listes-figures {
+        width: 90%;
+        padding-top: initial;
+        margin: 0px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 23px;
+        background-color: initial;
+    }
+
+    #fonctionnement-titre {
+        margin: 20px auto;
+    }
+
+    #fonctionnement {
+        margin: 0px auto;
+    }
+
+    #conteneur-titre button {
+        margin-top: initial;
+        margin-bottom: 40px;
+    }
+
+    #Restaurants {
+        position: initial;
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    /* ------------------------------------
+    LES PAGES RESTAURANTS VERSION TABLETTE  
+    -------------------------- */
+
+    #conteneur-restaurant {
+        bottom: 120px;
+        margin-bottom: -122px;
+    }
+
+
+    #fond {
+        position: relative;
+        height: 560px;
+        object-fit: cover;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    /* --------------------------
+    ACCEUIL VERSION DESKTOP
+    ------------------------- */
+
+    #fonctionnement {
+        margin: 0px auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #fonctionnement-titre {
+        margin: 20px auto;
+    }
+
+    #conteneur-titre button {
+        margin-top: initial;
+        margin-bottom: 40px;
+    }
+
+    .liens {
+        margin-bottom: initial;
+    }
+
+    #Restaurants {
+        position: initial;
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    figure {
+        width: 23%;
+    }
+
+    #listes-figures {
+        margin: 0px auto;
+        padding-top: initial;
+        background-color: inherit;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* ------------------------------------
+    LES PAGES RESTAURANTS VERSION DESKTOP
+    -------------------------- */
+
+    #fond {
+        position: relative;
+        height: 900px;
+        object-fit: cover;
+    }
+
+    #conteneur-restaurant {
+        bottom: 180px;
+        margin-bottom: -180px;
+    }
+
+
+    #plats {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    section {
+        width: 30%;
+    }
+
+
+
+
+
+
+
+}
