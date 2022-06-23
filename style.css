@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
 header {
     width: 100%;
     display: flex;
@@ -22,7 +27,7 @@ header img {
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: #c4c3c3;
 }
 
 #Paris-Belleville p {
@@ -42,13 +47,14 @@ header img {
     text-align: center;
 }
 
-#conteneur-titre h1 {
+#conteneur-titre h2 {
     margin-bottom: 15px;
+    /* font-weight: lighter; */
 }
 
-#conteneur-titre p {
+/* #conteneur-titre p {
     margin-bottom: 30px;
-}
+} */
 
 #conteneur-titre button {
     margin-bottom: 70px;
@@ -98,18 +104,36 @@ header img {
 
 /* .fa-mobile-screen-button, */
 .liens h3 {
-    padding: 30px 10px 30px 19px;
-    /* padding: 30px; */
+    position: relative;
+    left: 4%;
+    /* padding: 30px 10px 30px 19px; */
+    /* padding: 30px 0; */
+    padding: 30px 20px 30px 0;
     display: inline-block;
 }
 
-.fa-mobile-screen-button {
+/* .fa-mobile-screen-button {
     padding: 30px 0 30px 23px;
-}
+} */
 
-.fa-location-dot {
+/* .fa-location-dot {
     font-size: 24px;
     margin-left: -8px;
+} */
+
+.numeros {
+    position: relative;
+    right: 4%;
+    width: 25px;
+    height: 25px;
+    /* margin-left: -11px; */
+    padding: 4px;
+    background-color: #9356DC;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+
 }
 
 
@@ -166,7 +190,7 @@ figure img {
 .Nouveau {
     padding: 5px;
     border-radius: 3px;
-    background-color: aquamarine;
+    background-color: #99E2D0;
     color: darkslategrey;
     font-weight: bold;
 }
@@ -179,7 +203,7 @@ figure img {
 }
 
 figcaption {
-    padding: 10px 0 0 12px;
+    padding: 10px 0 15px 12px;
     background-color: #fff;
     border-radius: 0 0 15px 15px;
 }
@@ -188,12 +212,75 @@ figcaption h3 {
     margin-bottom: 4px;
 }
 
-.fa-heart {
+
+
+
+/* --------------------------------------------------------
+LES ICON */
+
+
+
+
+
+
+
+
+/* .fa-heart {
     position: relative;
     left: 86%;
     bottom: 40px;
     font-size: 20px;
+} */
+
+#figcaption-haut {
+    display: inline-block;
 }
+
+#hello,
+.fa-heart {
+    display: inline-block;
+    position: absolute;
+    left: 81%;
+    bottom: 8%;
+    font-size: 34px;
+    /* background-color: red; */
+    /* color: #fff; */
+    /* border: 2px solid black; */
+}
+
+#hello:hover {
+    background-color: #9356DC;
+}
+
+/* .fa-heart {
+    border: 1px solid red;
+    color: blue;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,6 +319,11 @@ a {
 #proposer,
 #devenir {
     font-weight: bold;
+}
+
+#ohmyfood {
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
 }
 
 .fa-utensils,
@@ -315,17 +407,20 @@ header {
     object-fit: cover;
 } */
 
+
+
+
 #fond {
     position: relative;
     /* width: 100vw; */
-    height: 360px;
-    object-fit: cover;
+    height: 300px;
+    /* object-fit: cover; */
 }
 
 #fond img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 
@@ -381,8 +476,12 @@ header {
     /* justify-content: center; */
 }
 
-#titre-restaurants h2 {
+#titre-restaurants>h2 {
     width: 85%;
+    /* font-family: Shrikhand, sans-serif; */
+    font-family: 'Shrikhand', cursive;
+    font-weight: lighter;
+
 }
 
 #titre-restaurants i {
@@ -403,6 +502,7 @@ section {
 
 .repas {
     margin: 40px 0 6px 0;
+    font-weight: lighter;
 }
 
 hr {
@@ -438,6 +538,10 @@ hr {
 
 .marge {
     padding: 14px;
+}
+
+.haut {
+    font-weight: bolder;
 }
 
 .bas {
@@ -518,6 +622,10 @@ footer img {
     /* ----------
 Tablett */
 
+    .numeros {
+        right: 2%;
+    }
+
     figure {
         width: 48%;
     }
@@ -541,7 +649,7 @@ Tablett */
     }
 
     #conteneur-titre button {
-        margin-top: initial;
+        /* margin-top: initial; */
         margin-bottom: 40px;
     }
 
@@ -588,7 +696,7 @@ Tablett */
     }
 
     #conteneur-titre button {
-        margin-top: initial;
+        /* margin-top: initial; */
         margin-bottom: 40px;
     }
 
