@@ -38,8 +38,8 @@ Loader */
     z-index: 2;
     background-color: #fff;
     opacity: 0.9;
-    animation: finLoader 0.3s forwards;
-    animation-delay: 1.5s;
+    animation: finLoader 0.3s 1.5s forwards;
+    /* animation-delay: 1.5s; */
     transform-origin: top right;
 }
 
@@ -55,10 +55,6 @@ Loader */
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
     to {
         transform: rotate(360deg);
     }
@@ -439,6 +435,8 @@ hr {
 
 
 
+
+
 /* L animation des liens sur les pages des restaurants  */
 .box_1 {
     position: relative;
@@ -452,10 +450,6 @@ hr {
     animation-duration: 3s;
     opacity: 1;
 }
-
-/* .entree {
-    animation-delay: 0.1s;
-} */
 
 .principal {
     animation-delay: 0.3s;
@@ -490,7 +484,7 @@ hr {
     font-weight: bolder;
 
     /* -----------------------------------------------
-    Propriete necessaire pour l'animation des lien */
+    Propriete necessaire pour la deuxieme animation des lien */
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -646,8 +640,8 @@ button {
 #commander:hover {
     transition-duration: 1s;
     filter: brightness(1.40);
-    box-shadow: 4px 5px 10px rgb(60 60 60);
-
+    /* box-shadow: 4px 5px 10px rgb(60 60 60); */
+    box-shadow: 10px 10px 8px #9356DC;
 }
 
 footer img {
