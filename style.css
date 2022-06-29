@@ -9,6 +9,73 @@ body {
 
 }
 
+/* ---------
+Loader */
+
+.text {
+    font-size: 50px;
+}
+
+#char {
+    color: #9356DC;
+}
+
+#gem {
+    color: #99E2D0;
+}
+
+#ent {
+    color: #FF79DA;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: #fff;
+    opacity: 0.9;
+    animation: finLoader 0.3s forwards;
+    animation-delay: 1.5s;
+    transform-origin: top right;
+}
+
+.cercle {
+    width: 60px;
+    height: 60px;
+    border-top: 8px solid #9356DC;
+    border-bottom: 8px solid #FF79DA;
+    border-left: 8px solid #99E2D0;
+    border-right: 8px solid transparent;
+    border-radius: 50%;
+    animation: rotate 0.6s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes finLoader {
+    to {
+        transform: scale(0);
+    }
+
+}
+
+/* Fin du loader
+---------------- */
+
+
+
 header {
     width: 100%;
     display: flex;
@@ -515,7 +582,7 @@ L'ANIMATION DES LIENS DE PAGES RESTAURANTS  */
     text-overflow: ellipsis;
     overflow: hidden;
 
-    transition: width 0.6s all ease;
+    transition: width 0.6s ease;
 }
 
 .box_1:hover .marge {
@@ -579,7 +646,7 @@ button {
 #commander:hover {
     transition-duration: 1s;
     filter: brightness(1.40);
-    box-shadow: 10px 10px 8px #9356DC;
+    box-shadow: 4px 5px 10px rgb(60 60 60);
 
 }
 
