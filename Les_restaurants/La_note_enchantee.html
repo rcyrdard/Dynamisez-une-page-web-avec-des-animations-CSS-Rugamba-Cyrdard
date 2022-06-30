@@ -5,16 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@500&family=Raleway:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@500&family=Raleway:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Roboto&family=Shrikhand&display=swap"
-        rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7865361c5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
@@ -22,28 +12,37 @@
 </head>
 
 <body>
+
+    <!-- Le header  -->
     <header>
         <img src="../images/logo/ohmyfood@2x.svg" alt="logo">
     </header>
+    <!-- Fin du header  -->
+
+    <!-- La fleche pour le retour a l'acceuil  -->
     <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
 
-
+    <!-- La photo du restaurant  -->
     <div id="fond">
         <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image de fond">
     </div>
 
+    <!-- Le conteneur pour les liens des choix des plats desserts et entree  -->
     <div id="conteneur-restaurant">
 
         <main id="plats">
 
             <div id="titre-restaurants">
                 <h2>La note enchantée</h2>
-                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
             </div>
 
+            <!-- les entree  -->
             <section>
                 <h3 class="repas">ENTREES</h3>
                 <hr>
+                <!-- le hr pour le lisere vert en dessous des repas -->
+
                 <div class="box_1 entree prems">
                     <a href="#">
                         <div class="marge">
@@ -58,6 +57,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 entree">
                     <a href="#">
                         <div class="marge">
@@ -72,6 +72,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 entree">
                     <a href="#">
                         <div class="marge">
@@ -86,6 +87,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 entree">
                     <a href="#">
                         <div class="marge">
@@ -100,11 +102,15 @@
                         </div>
                     </a>
                 </div>
+
             </section>
 
+            <!-- les plats  -->
             <section>
+
                 <h3 class="repas">PLATS</h3>
                 <hr>
+
                 <div class="box_1 principal prems">
                     <a href="#">
                         <div class="marge">
@@ -119,6 +125,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 principal">
                     <a href="#">
                         <div class="marge">
@@ -133,6 +140,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 principal">
                     <a href="#">
                         <div class="marge">
@@ -147,11 +155,15 @@
                         </div>
                     </a>
                 </div>
+
             </section>
 
+            <!-- Les desserts -->
             <section>
+
                 <h3 class="repas">DESSERTS</h3>
                 <hr>
+
                 <div class="box_1 desserts prems">
                     <a href="#">
                         <div class="marge">
@@ -166,6 +178,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 desserts">
                     <a href="#">
                         <div class="marge">
@@ -180,6 +193,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="box_1 desserts">
                     <a href="#">
                         <div class="marge">
@@ -194,8 +208,10 @@
                         </div>
                     </a>
                 </div>
+
             </section>
 
+            <!-- le button pour commander  -->
             <button id="commander">Commander</button>
 
         </main>
@@ -207,13 +223,11 @@
 
         <div id="taille-footer">
 
-            <!-- <img src="../images/logo/ohmyfood@2x.svg" alt="logo"> -->
             <h3 id="ohmyfood">Ohmyfood</h3>
             <a href="#" id="proposer"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
             <a href="#" id="devenir"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
             <a href="#">Mentions légales</a>
             <a href="mailto:rcyrdad@gmail.com">Contact</a>
-            <!-- <a href="#"href=""></a> -->
 
         </div>
     </footer>

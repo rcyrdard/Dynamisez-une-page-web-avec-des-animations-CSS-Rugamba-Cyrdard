@@ -9,6 +9,9 @@ body {
 
 }
 
+
+
+
 /* ---------
 Loader */
 
@@ -72,6 +75,8 @@ Loader */
 
 
 
+
+
 header {
     width: 100%;
     display: flex;
@@ -82,6 +87,10 @@ header {
 header img {
     padding: 20px 0 16px 0;
 }
+
+
+
+
 
 #Paris-Belleville {
     padding: 20px 0;
@@ -95,6 +104,10 @@ header img {
 #Paris-Belleville p {
     margin-left: 30px;
 }
+
+
+
+
 
 #conteneur-titre-background {
     background-color: #f6f6f6;
@@ -110,6 +123,10 @@ header img {
 #conteneur-titre h2 {
     margin-bottom: 15px;
 }
+
+
+
+
 
 #conteneur-titre button {
     margin-bottom: 70px;
@@ -127,13 +144,15 @@ header img {
 #conteneur-titre button:hover {
     transition-duration: 1s;
     filter: brightness(1.40);
-    box-shadow: 10px 10px 8px #9356DC;
+    box-shadow: 6px 10px 8px #9356DC82;
 }
+
+
+
 
 /* --------------------------
         Liens
 ------------------------- */
-
 
 #fonctionnement-titre {
     margin: 50px auto;
@@ -169,6 +188,7 @@ header img {
     color: #9356DC;
 }
 
+/* Construction des numeros sur les liens de Fonctionnement */
 .numeros {
     position: relative;
     right: 2%;
@@ -191,10 +211,12 @@ header img {
 }
 
 
+
+
+
 /* ----------------------------
         LES FIGURES 
 ---------------------------- */
-
 
 #Restaurants {
     position: relative;
@@ -241,6 +263,7 @@ figure img {
     font-weight: bold;
 }
 
+/* Les span du text (Nouveau) an position absolute sur l'image  */
 .un,
 .deux {
     position: absolute;
@@ -262,17 +285,22 @@ figure img {
     display: inline-block;
 }
 
-.hello,
-.fa-heart {
+#coeur-blanc,
+#coeur-violet {
     display: inline-block;
     position: absolute;
     left: 81%;
-    bottom: 8%;
-    font-size: 34px;
+    bottom: 12%;
+    font-size: 24px;
 }
 
-.hello:hover {
-    background-color: #9356DC;
+#coeur-violet {
+    color: #9356DC;
+    visibility: hidden;
+}
+
+#coeur:hover #coeur-violet {
+    visibility: visible;
 }
 
 
@@ -283,7 +311,6 @@ figure img {
 /* ----------------------------
         FOOTER 
 ---------------------------- */
-
 
 footer {
     display: flex;
@@ -339,21 +366,17 @@ a {
 
 
 
-
-
-
-
-
-
 /* ------------------------------------------------
             PAGE DES RESTAURANTS 
 ------------------------------------------------ */
+
 
 /* pour positionner la fleche du header a cote du logo */
 header {
     position: relative;
 }
 
+/* La fleche pour retourner sur l'acceuil  */
 .fa-arrow-left {
     color: #000;
 }
@@ -365,14 +388,9 @@ header {
     font-weight: bold;
 }
 
-#conteneur-restaurant {
-    position: relative;
-    bottom: 59px;
-    width: 100%;
-    margin-bottom: -60px;
-    border-radius: 30px 30px 0 0;
-    background-color: #f6f6f6;
-}
+
+
+
 
 #fond {
     position: relative;
@@ -385,11 +403,25 @@ header {
     object-fit: cover;
 }
 
+
+
+
+
+#conteneur-restaurant {
+    position: relative;
+    bottom: 59px;
+    width: 100%;
+    margin-bottom: -60px;
+    border-radius: 30px 30px 0 0;
+    background-color: #f6f6f6;
+}
+
 #plats {
     padding: 4px 0 30px 0;
     margin: 0px auto;
     width: 90%;
 }
+
 
 /* ---------------------------------------
 LES LIENS DES PAGES RESTAURANTS  */
@@ -422,6 +454,7 @@ section {
     font-weight: lighter;
 }
 
+/* Pour stylisée le surlignement des tires des repas  */
 hr {
     width: 15%;
     height: 4px;
@@ -451,6 +484,7 @@ hr {
     opacity: 1;
 }
 
+/* Les selecteurs Principale et desserts pour animer les liens avec un delai  */
 .principal {
     animation-delay: 0.3s;
 }
@@ -511,8 +545,6 @@ hr {
 
 
 
-
-
 /* ---------------------------------------
 L'ANIMATION DES LIENS DE PAGES RESTAURANTS  */
 
@@ -545,8 +577,6 @@ L'ANIMATION DES LIENS DE PAGES RESTAURANTS  */
 
 
 
-
-
 /* ---------------------------------- */
 
 .fa-circle-check {
@@ -559,7 +589,6 @@ L'ANIMATION DES LIENS DE PAGES RESTAURANTS  */
 .box_1:hover .fa-circle-check {
     transform: rotate(360deg);
 }
-
 
 
 
@@ -582,7 +611,6 @@ L'ANIMATION DES LIENS DE PAGES RESTAURANTS  */
 .box_1:hover .marge {
     width: 74%;
 }
-
 
 
 
@@ -615,7 +643,6 @@ L'ANIMATION DES LIENS DE PAGES RESTAURANTS  */
 
 
 
-
 button {
     text-align: center;
     margin: 40px 0;
@@ -640,8 +667,8 @@ button {
 #commander:hover {
     transition-duration: 1s;
     filter: brightness(1.40);
-    /* box-shadow: 4px 5px 10px rgb(60 60 60); */
-    box-shadow: 10px 10px 8px #9356DC;
+    box-shadow: 6px 10px 8px #9356DC82;
+
 }
 
 footer img {
